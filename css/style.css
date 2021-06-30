@@ -1,30 +1,85 @@
 .body{
       
-      background: linear-gradient (#419387 15%, #d9dbd6 85%);
+      background: linear-gradient (#419387 15%, #d9dbd6 15%);
       height: 100vh;
 }
+
+
 
 .boolz{
       margin-top: 32px;
 }
 
 .userList{
-      height: 500px;
+      /* height: 500px; */
       border:1px solid black;
 }
 
 .msgList{
-      height: 500px;
+      /* height: 500px; */
       border:1px solid black;
 }
 
 .top{
-      height: 50px;
+      /* height: 50px; */
       border:1px solid black;
 }
+
+.top i{
+      font-size: 24px;
+      padding-right: 8px;
+}
+
+.icon-gray{
+      color: #b1b1b1;
+}
+
+.contacts ul{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+}
+
+
 
 .avatar{
       width: 72px;
       border-radius: 50%;
+}
+
+.user-header {
+     background-color:#eaeaea;
+}
+
+.alert-msg {
+      background-color: #9fd8f8;
+      margin-top: 12px;
+}
+
+/* area messaggi */
+
+.message-area {
+      background-image: url(../img/mine.jpg);
+      overflow-y:scroll;
+}
+
+.message-area .received{
+      background-color: orange;
+      margin-right: 24px;
+}
+.message-area .received{
+      background-color: #fff;
+      margin-left:24px;
+}
+
+
+.received, .sent{
+      border-radius: 8px;
+      padding: 8px 24px;
+      margin-top: 12px;
+}
+.date{
+      font-size: 12px;
 }
 

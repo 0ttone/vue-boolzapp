@@ -21,32 +21,47 @@
                               <div class="col-4 userList">
                                     <div class="top">
                                           <div class="user-header">
-                                                <div class="d-flex justify-content-between">
+                                                <div class="d-flex justify-content-between align-item-center">
                                                       <div class="top-left-avatar">
                                                             <img class="avatar" src="./img/avatar_io.jpg" alt="my avatar">
-                                                            <span> Name user</span>
+                                                            <span> Nome Utente</span>
                                                       </div>
-                                                      <div class="top-right-avatar icons">
+                                                      <div class="top-right-avatar icon-gray">
                                                             <i class="fas fa-circle-notch"></i>
                                                             <i class="fas fa-comment-alt"></i>
                                                             <i class="fas fa-ellipsis-v"></i>
                                                       </div>
                                                 </div>
                                           </div>
-
+                                          
                                     </div>
-                                    <div class="aler-msg d-flex">
+                                          <!-- Notifiche -->
 
-                                    </div>
-                                    <div class="search-bar d-flex ">
-                                          <div class="icons">
-                                                <i class="fas fa-search"></i>
+                                    <div class="alert-msg d-flex align-item-center">
+                                          <div>
+                                                <i class="fas fa-bell-slash"></i>
                                           </div>
                                           <div>
-                                                <input placeholder="Search or start">
+                                                <span>Ricevi notifiche di nuovi messaggi</span><br>
+                                                <a href="#">Attiva notifiche desktop</a>
+                                          </div>
+                                          
+                                    </div>
+
+                                          <!--Ricerca -->
+
+                                    <div class="search-bar d-flex ">
+                                          <div class="icon-gray">
+                                                <i class="fas fa-search"></i>
+                                          </div>
+                                          <!-- verifica grow -->
+                                          <div class="flex-grow-1">
+                                                <input placeholder="Cerca o inizia nuova chat">
                                           </div>
                                          
                                     </div>
+                                    <!-- Contacts - verifica altezze -classi flex assegnare ul -->
+
                                     <div class="contacts">
                                           <ul>
                                                 <li v-for="contact in contacts">
@@ -62,12 +77,67 @@
 
                                     
                               </div>
-                              <!-- Left side 8 col  -->
+                              <!-- Right side 8 col  -->
                               <div class="col-8 msgList">
                                     <div class="top">
+                                          <div class="user-header">
+                                                <div class="d-flex justify-content-between align-item-center ">
+                                                      <div class="top-right-avatar">
+                                                            <img class="avatar" src="./img/avatar_4.jpg" alt="my avatar">
+                                                            <span> Name user</span>
+                                                      </div>
+                                                      <div class="top-right-avatar icon-gray">
+                                                            <i class="fas fa-paperclip"></i>
+                                                            <i class="fas fa-comment-alt"></i>
+                                                            <i class="fas fa-ellipsis-v"></i>
+                                                      </div>
+                                                </div>
+                                          </div>
 
                                     </div>
+                                    <!-- Area messaggi -->
+                                    <div class="message--area d-flex flex-column">
+                                          <!-- check continuo altezze -->
+                                          
+                                          <div class="align-self-end">
+                                                <div class="sent">
+                                                      <div class="message">
+                                                      <span>Messaggio inviato</span>
+                                                      </div>
+                                                      <div class="date">
+                                                            06/30/2021 14:59:36
+                                                      </div>
+                                                </div>
+                                          </div>
 
+                                          <div class="align-self-end">
+                                                <div class="sent">
+                                                      <div class="message">
+                                                            <span>Messaggio inviato</span>
+                                                      </div>
+                                                      <div class="date">
+                                                            06/30/2021 15:00:59
+                                                      </div>
+                                                </div>
+                                          </div>
+
+                                          <div class="align-self-start">
+                                                <div class="received">
+                                                      <div class="message">
+                                                            <span>Messaggio ricevuto</span>
+                                                      </div>
+                                                      <div class="date">
+                                                            06/30/2021 15:31:00
+                                                      </div>
+                                                </div>
+                                          </div>
+
+
+
+
+
+
+                                    </div>
 
                               </div>
                         </div>
