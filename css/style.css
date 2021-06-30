@@ -1,0 +1,30 @@
+.body{
+      
+      background: linear-gradient (#419387 15%, #d9dbd6 85%);
+      height: 100vh;
+}
+
+.boolz{
+      margin-top: 32px;
+}
+
+.userList{
+      height: 500px;
+      border:1px solid black;
+}
+
+.msgList{
+      height: 500px;
+      border:1px solid black;
+}
+
+.top{
+      height: 50px;
+      border:1px solid black;
+}
+
+.avatar{
+      width: 72px;
+      border-radius: 50%;
+}
+
