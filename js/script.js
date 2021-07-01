@@ -109,10 +109,22 @@ const app = new Vue(
 
 
             methods: { 
+
                   // associata al @click assegna all avatar l index su cui lavorare (in teoria)
                   //e richiamare a dx tutto l oggetto di riferimento stampando i msg
                   userActive: function (index){
                         this.contactsIndex=index;
+                  },
+
+                  //aggiungere un messaggio
+
+                  addMessage: function(index){
+                        this.contacts[index].messages.push({
+                              date: '28/03/2020 10:10:40',
+                              text: this.newMessage,
+                              status: 'sent',
+                        })
+                        this.newMessage= '';
                   },
 
 

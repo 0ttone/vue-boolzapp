@@ -64,7 +64,7 @@
 
                                     <div class="contacts">
                                           <ul>
-                                                <li v-for="contact in contacts"
+                                                <li v-for="(contact, index) in contacts"
                                                       @click="userActive(index)">
                                                       <div class="img-avatar d-inline">
                                                             <img class="avatar" :src="contact.avatar" alt="avatar">
@@ -146,7 +146,7 @@
                                                 <i class="far fa-smile"></i>
                                           </div>
                                           <div class="flex-grow-1">
-                                                <input placeholder="Scrivi messaggio">
+                                                <input @keyup.enter="addMessage(contactsIndex)" v-model="newMessage" placeholder="Scrivi messaggio">
 
                                           </div>
                                           <div>
