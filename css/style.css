@@ -80,6 +80,14 @@ input{
 
 }
 
+.received{
+      align-self: flex-start;
+}
+
+.sent{
+      align-self: flex-end;
+}
+
  .message-area .received{
       background-color: rgb(221, 198, 198);
       margin-left: 24px;
@@ -88,6 +96,8 @@ input{
       background-color: rgb(148, 197, 13);
       margin-right:24px;
 }
+
+
 
 
 .received, .sent{

@@ -6,6 +6,10 @@ const app = new Vue(
           el: '#app',
 
           data: {
+
+            contactsIndex: 0,
+            newMessage:'',
+
             contacts: [
                   {
                         name: 'Michele',
@@ -92,7 +96,7 @@ const app = new Vue(
                   },
             ],
 
-                  contactsIndex: 0,
+                  
             
             
 

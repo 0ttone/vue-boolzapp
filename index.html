@@ -99,19 +99,20 @@
                                     <!-- Area messaggi -->
                                     <div class="message-area d-flex flex-column">
                                           <!-- check continuo altezze -->
+                                          <!-- riassegnare classi sent received -->
                                           
-                                          <div class="align-self-end">
-                                                <div class="sent">
+                                                <div v-for= "message in contacts[contactsIndex].messages" :class="message.status">
                                                       <div class="message">
-                                                      <span>Messaggio inviato</span>
+                                                      {{message.text}}
                                                       </div>
                                                       <div class="date">
-                                                            06/30/2021 14:59:36
+                                                       {{message.date}}
+                                                            
                                                       </div>
                                                 </div>
                                           </div>
 
-                                          <div class="align-self-end">
+                                          <!--
                                                 <div class="sent">
                                                       <div class="message">
                                                             <span>Messaggio inviato</span>
@@ -132,7 +133,7 @@
                                                       </div>
                                                 </div>
                                           </div>
-
+                                          -->
 
 
 
