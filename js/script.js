@@ -116,7 +116,7 @@ const app = new Vue(
                         this.contactsIndex=index;
                   },
 
-                  //aggiungere un messaggio
+                  //aggiungere un messaggio in input
 
                   addMessage: function(index){
                         this.contacts[index].messages.push({
@@ -126,6 +126,20 @@ const app = new Vue(
                         })
                         this.newMessage= '';
                   },
+
+
+                  //risposta automatica in un secondo con setTimeout
+
+                  replyMessage: function(index){
+                        setTimeout (()=>{
+                              this.contacts[index].messages.push({
+                                    date: '28/03/2020 10:10:40',
+                                    text: 'ok',
+                                    status: 'received',
+                              })
+
+                        },2000)
+                  }
 
 
 
