@@ -90,13 +90,36 @@ const app = new Vue(
                               }
                         ],
                   },
-            ]
+            ],
+
+                  contactsIndex: 0,
             
+            
+
               
           
           
           
             },
+
+
+
+            methods: { 
+                  // associata al @click assegna all avatar l index su cui lavorare (in teoria)
+                  //e richiamare a dx tutto l oggetto di riferimento stampando i msg
+                  userActive: function (index){
+                        this.contactsIndex=index;
+                  },
+
+
+
+
+
+
+
+
+
+            }
 
        
       

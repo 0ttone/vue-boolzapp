@@ -1,7 +1,9 @@
 .body{
+      background-image: linear-gradient (#419387 15%, #d9dbd6 15%);
       
-      background: linear-gradient (#419387 15%, #d9dbd6 15%);
       height: 100vh;
+      
+      
 }
 
 
@@ -30,6 +32,11 @@
       padding-right: 8px;
 }
 
+input{
+      width: 100%;
+      line-height: 48px;
+}
+
 .icon-gray{
       color: #b1b1b1;
 }
@@ -39,6 +46,12 @@
       padding: 0;
       list-style: none;
 
+}
+
+.contacts ul li{
+      height: 80px;
+      padding: 8px;
+      border-bottom: 1px solid #ccc;
 }
 
 
@@ -61,16 +74,19 @@
 
 .message-area {
       background-image: url(../img/mine.jpg);
+      background-size: cover;
       overflow-y:scroll;
+      height: 100vh;
+
 }
 
-.message-area .received{
-      background-color: orange;
-      margin-right: 24px;
+ .message-area .received{
+      background-color: rgb(221, 198, 198);
+      margin-left: 24px;
 }
-.message-area .received{
-      background-color: #fff;
-      margin-left:24px;
+ .message-area .sent{
+      background-color: rgb(148, 197, 13);
+      margin-right:24px;
 }
 
 
@@ -83,3 +99,21 @@
       font-size: 12px;
 }
 
+
+/* input text */
+
+.input-text{
+      padding: 12px;
+      background-color: thistle;
+
+}
+
+.input-text i{
+      padding: 0 24px;
+      color: gray;
+}
+
+.input-text input{
+      border-radius: 8px;
+      border: none;
+}
