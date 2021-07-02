@@ -139,7 +139,20 @@ const app = new Vue(
                               })
 
                         },2000)
-                  }
+                  },
+
+                  //url dinamico per img avatar -!!! NON VA 
+
+                 //pathAvatar: function (index) {
+                 //       return `./img/avatar_${index + 1}.jpg`
+                 // },
+
+                 getCurrentDateTime: function () {
+                       const dateTimeNow = dayjs();
+                       return dateTimeNow.format("DD/MM/YYYY HH:mm:ss");
+                       
+                   },
+              
 
 
 
