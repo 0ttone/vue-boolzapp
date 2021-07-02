@@ -145,7 +145,9 @@ const app = new Vue(
 
                  pathAvatar: function (index) {
                         return `./img/avatar_${index + 1}.jpg`
-                   },
+                  
+                 },
+
 
                  getCurrentDateTime: function () {
                        const dateTimeNow = dayjs();
