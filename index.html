@@ -68,7 +68,7 @@
                                                 <li v-for="(contact, index) in contacts"
                                                       @click="userActive(index)">
                                                       <div class="img-avatar d-inline">
-                                                            <img class="avatar" :src="contact.avatar" alt="avatar">
+                                                            <img class="avatar" :src="pathAvatar(index)" alt="avatar">
                                                       </div>
                                                       <span class="contact-name">
                                                             {{contact.name}}
@@ -85,8 +85,8 @@
                                           <div class="user-header">
                                                 <div class="d-flex justify-content-between align-item-center ">
                                                       <div class="top-right-avatar">
-                                                            <img class="avatar" src="./img/avatar_4.jpg" alt="my avatar">
-                                                            <span> Name user</span>
+                                                            <img class="avatar" :src="pathAvatar(userActive)" alt="my avatar">
+                                                            <span> {{contacts[userActive].name}}</span>
                                                       </div>
                                                       <div class="top-right-avatar icon-gray">
                                                             <i class="fas fa-paperclip"></i>

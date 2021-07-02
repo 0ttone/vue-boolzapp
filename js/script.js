@@ -13,7 +13,7 @@ const app = new Vue(
             contacts: [
                   {
                         name: 'Michele',
-                        avatar: './img/avatar_1.jpg',
+                        // avatar: './img/avatar_1.jpg',
                         visible: true,
                         messages: [
                               {
@@ -35,7 +35,7 @@ const app = new Vue(
                   },
                   {
                         name: 'Fabio',
-                        avatar: './img/avatar_2.jpg',
+                        // avatar: './img/avatar_2.jpg',
                         visible: true,
                         messages: [
                               {
@@ -57,7 +57,7 @@ const app = new Vue(
                   },
                   {
                         name: 'Samuele',
-                        avatar: './img/avatar_3.jpg',
+                        // avatar: './img/avatar_3.jpg',
                         visible: true,
                         messages: [
                               {
@@ -79,7 +79,7 @@ const app = new Vue(
                   },
                   {
                         name: 'Luisa',
-                        avatar: './img/avatar_4.jpg',
+                        // avatar: './img/avatar_4.jpg',
                         visible: true,
                         messages: [
                               {
@@ -143,9 +143,9 @@ const app = new Vue(
 
                   //url dinamico per img avatar -!!! NON VA 
 
-                 //pathAvatar: function (index) {
-                 //       return `./img/avatar_${index + 1}.jpg`
-                 // },
+                 pathAvatar: function (index) {
+                        return `./img/avatar_${index + 1}.jpg`
+                   },
 
                  getCurrentDateTime: function () {
                        const dateTimeNow = dayjs();
