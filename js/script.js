@@ -120,7 +120,7 @@ const app = new Vue(
 
                   addMessage: function(index){
                         this.contacts[index].messages.push({
-                              date: '28/03/2020 10:10:40',
+                              date: this.getCurrentDateTime(),
                               text: this.newMessage,
                               status: 'sent',
                         })
@@ -133,7 +133,7 @@ const app = new Vue(
                   replyMessage: function(index){
                         setTimeout (()=>{
                               this.contacts[index].messages.push({
-                                    date: '28/03/2020 10:10:40',
+                                    date: this.getCurrentDateTime(),
                                     text: 'ok',
                                     status: 'received',
                               })
