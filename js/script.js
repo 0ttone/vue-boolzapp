@@ -160,7 +160,7 @@ const app = new Vue(
                    //filtro campo ricerca per contatti -funzione + minuscolo e confronto
 
                    filterContacts: function (){
-                         this.contacts.forEach((contact){
+                         this.contacts.forEach((contact) => {
                                let contactName = contact.name.toLowerCase();
 
                                if (contactName.includes(this.searchContacts.toLowerCase())){
@@ -168,8 +168,8 @@ const app = new Vue(
 
                                } else {
                                      contact.visible = false;
-                               }
-                         })
+                              }         
+                         });
                    },
               
 
