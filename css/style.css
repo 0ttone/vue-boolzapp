@@ -34,7 +34,8 @@
 
 input{
       width: 100%;
-      line-height: 48px;
+      line-height: 36px;
+      border: none;
 }
 
 .icon-gray{
@@ -49,7 +50,7 @@ input{
 }
 
 .contacts ul li{
-      height: 80px;
+      /* height: 80px; */
       padding: 8px;
       border-bottom: 1px solid #ccc;
 }
@@ -69,6 +70,32 @@ input{
       background-color: #9fd8f8;
       margin-top: 12px;
 }
+
+.alert-msg .container-bell {
+      color: #9fd8f8;
+      background-color: #fff;
+      height: 36px;
+      line-height: 36px;
+      font-size: 20px;
+      border-radius: 50%;
+      text-align: center;
+      min-width: 36px;
+      margin-right: 12px;
+
+}
+
+/* ricerca */
+
+.search-bar  {
+      background-color: #fff;
+      border: 1px solid #f0efef;
+      margin-top: 12px;
+
+}
+.search-bar .icon-gray {
+      padding: 0 12px;
+}
+
 
 /* area messaggi */
 

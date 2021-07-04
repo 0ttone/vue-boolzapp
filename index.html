@@ -39,7 +39,7 @@
                                           <!-- Notifiche -->
 
                                     <div class="alert-msg d-flex align-items-center">
-                                          <div>
+                                          <div class="container-bell">
                                                 <i class="fas fa-bell-slash"></i>
                                           </div>
                                           <div>
@@ -51,7 +51,7 @@
 
                                           <!--Ricerca -->
 
-                                    <div class="search-bar d-flex ">
+                                    <div class="search-bar d-flex align-items-center">
                                           <div class="icon-gray">
                                                 <i class="fas fa-search"></i>
                                           </div>
@@ -144,7 +144,9 @@
                                                       <i class="far fa-smile"></i>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                      <input @keyup.enter="addMessage(contactsIndex); replyMessage(contactsIndex)" v-model="newMessage" placeholder="Scrivi messaggio">
+                                                      <input @keyup.enter="addMessage(contactsIndex); replyMessage(contactsIndex)" 
+                                                            v-model="newMessage" 
+                                                            placeholder="Scrivi messaggio">
       
                                                 </div>
                                                 <div>
