@@ -57,7 +57,9 @@
                                           </div>
                                           <!-- verifica grow -->
                                           <div class="flex-grow-1">
-                                                <input placeholder="Cerca o inizia nuova chat">
+                                                <input v-model="searchContacts"
+                                                      @keyup="filterContacts()"
+                                                      placeholder="Cerca o inizia nuova chat">
                                           </div>
                                          
                                     </div>
@@ -65,7 +67,8 @@
 
                                     <div class="contacts">
                                           <ul>
-                                                <li v-for="(contact, index) in contacts"
+                                                <li   v-for="(contact, index) in contacts"
+                                                      v-if="contact.visible"
                                                       @click="userActive(index)">
                                                       <div class="img-avatar d-inline">
                                                             <img class="avatar" :src="pathAvatar(index)" alt="avatar">
@@ -135,25 +138,26 @@
                                                 </div>
                                           </div>
                                           -->
-
+                                          <!-- Input text -->
+                                          <div class="input-text d-flex align-item-center justify-content-between">
+                                                <div class="emoticons">
+                                                      <i class="far fa-smile"></i>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                      <input @keyup.enter="addMessage(contactsIndex); replyMessage(contactsIndex)" v-model="newMessage" placeholder="Scrivi messaggio">
+      
+                                                </div>
+                                                <div>
+                                                      <i class="fas fa-microphone"></i>
+                                                </div>
+                                          </div>
 
 
 
 
                                     </div>
-                                    <!-- Input text -->
-                                    <div class="input-text d-flex align-item-center justify-content-between">
-                                          <div class="emoticons">
-                                                <i class="far fa-smile"></i>
-                                          </div>
-                                          <div class="flex-grow-1">
-                                                <input @keyup.enter="addMessage(contactsIndex); replyMessage(contactsIndex)" v-model="newMessage" placeholder="Scrivi messaggio">
-
-                                          </div>
-                                          <div>
-                                                <i class="fas fa-microphone"></i>
-                                          </div>
-                                    </div>
+                                    
+                                    
 
                               </div>
                         </div>

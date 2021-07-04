@@ -9,6 +9,7 @@ const app = new Vue(
 
             contactsIndex: 0,
             newMessage:'',
+            searchContacts: '',
 
             contacts: [
                   {
@@ -141,7 +142,8 @@ const app = new Vue(
                         },2000)
                   },
 
-                  //url dinamico per img avatar -!!! NON VA 
+                  //url dinamico per img avatar -!!! ok errore: 
+                  //assegnare in html pathAvatar funzione  invece di contactsIndex
 
                  pathAvatar: function (index) {
                         return `./img/avatar_${index + 1}.jpg`
@@ -153,6 +155,21 @@ const app = new Vue(
                        const dateTimeNow = dayjs();
                        return dateTimeNow.format("DD/MM/YYYY HH:mm:ss");
                        
+                   },
+
+                   //filtro campo ricerca per contatti -funzione + minuscolo e confronto
+
+                   filterContacts: function (){
+                         this.contacts.forEach((contact){
+                               let contactName = contact.name.toLowerCase();
+
+                               if (contactName.includes(this.searchContacts.toLowerCase())){
+                                     contact.visible = true;
+
+                               } else {
+                                     contact.visible = false;
+                               }
+                         })
                    },
               
 
